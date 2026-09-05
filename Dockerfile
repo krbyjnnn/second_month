@@ -1,13 +1,15 @@
 FROM php:8.2-cli
 
-# Install system dependencies
+# Install system dependencies and Node.js
 RUN apt-get update && apt-get install -y \
     git \
     curl \
     zip \
     unzip \
     sqlite3 \
-    libsqlite3-dev
+    libsqlite3-dev \
+    nodejs \
+    npm
 
 # Install PDO SQLite extension
 RUN docker-php-ext-install pdo_sqlite
@@ -21,8 +23,10 @@ WORKDIR /var/www
 # Copy application files
 COPY . /var/www
 
-# Install dependencies
+# Install PHP & Node dependencies
 RUN composer install --no-dev --optimize-autoloader
+RUN npm install
+RUN npm run build
 
 # Set permissions for storage and cache
 RUN chmod -R 777 storage bootstrap/cache
