@@ -191,22 +191,22 @@
             <div class="photos-wrapper my-3">
                 <div class="polaroid-frame" style="--rot: -3deg;">
                     <img src="{{ asset('image/pic1.jpg') }}" alt="Memory 1" class="polaroid-img">
-                    <span class="polaroid-caption">My Favorite 💕</span>
+                    <span class="polaroid-caption">You</span>
                 </div>
 
                 <div class="polaroid-frame" style="--rot: 2deg;">
                     <img src="{{ asset('image/pic2.jpg') }}" alt="Memory 2" class="polaroid-img">
-                    <span class="polaroid-caption">Us Together 🥰</span>
+                    <span class="polaroid-caption">+</span>
                 </div>
 
                 <div class="polaroid-frame" style="--rot: -2deg;">
                     <img src="{{ asset('image/pic3.jpg') }}" alt="Memory 3" class="polaroid-img">
-                    <span class="polaroid-caption">Cutest Smile 🌸</span>
+                    <span class="polaroid-caption">Me</span>
                 </div>
 
                 <div class="polaroid-frame" style="--rot: 3deg;">
                     <img src="{{ asset('image/pic4.jpg') }}" alt="Memory 4" class="polaroid-img">
-                    <span class="polaroid-caption">Forever To Go ✨</span>
+                    <span class="polaroid-caption">= US</span>
                 </div>
             </div>
 
